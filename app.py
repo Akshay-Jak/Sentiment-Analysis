@@ -1,7 +1,7 @@
 import streamlit as st
 st.title('Sentiment Analysis')
 import pandas as pd
-df = pd.read_table('/content/Reviews.tsv')
+df = pd.read_table('Reviews.tsv')
 x = df.iloc[:,1].values
 y = df.iloc[:,0].values
 from sklearn.pipeline import Pipeline
